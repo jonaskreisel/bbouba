@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bbouba - Sloni indičtí</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4e8d9; /* Warm beige background for natural feel */
+            color: #3a2f2a; /* Dark brown text for contrast */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('slon1.jpg') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: 'Georgia', serif; /* Retro-inspired font */
+        }
+
+        /* Main content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #6b4e31; /* Earthy brown for headings */
+            margin-bottom: 20px;
+            border-bottom: 2px solid #a68a64; /* Subtle retro underline */
+            padding-bottom: 10px;
+            font-family: 'Georgia', serif;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6b4e31;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            section h2 {
+                font-size: 1.8rem;
+            }
+
+            section p {
+                font-size: 1rem;
+            }
+
+            .gallery img {
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 50vh;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            .gallery img {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bbouba</h1>
+    </header>
+
+    <main>
+        <section id="vzhled">
+            <h2>Vzhled a velikost</h2>
+            <p>Slon indický je poddruh slona afrického a patří mezi největší suchozemské savce Asie. Samci mohou dorůstat výšky až 3 metry a vážit kolem pěti tun, samice bývají menší. Typickým znakem jsou menší uši než u afrických slonů, což souvisí s chladnějším klimatem některých oblastí Asie. Kly mají především samci, u samic se objevují jen zřídka a bývají menší. Jejich kůže je silná, ale méně zvrásněná než u afrického příbuzného.</p>
+        </section>
+
+        <section id="prostredi">
+            <h2>Životní prostředí a potrava</h2>
+            <p>Sloni indičtí obývají lesy, travnaté oblasti a džungle od Indie po jihovýchodní Asii. Potřebují dostatek vody, proto je často najdeme v blízkosti řek či jezer. Každý den zkonzumují až 150 kilogramů rostlinné potravy – listy, trávy, ovoce nebo kůru stromů. Voda je pro ně nezbytná nejen k pití, ale i k ochlazování těla, proto se často koupou nebo cákají blátem. Tím chrání kůži před hmyzem i sluncem. Díky své schopnosti ničit vegetaci hrají důležitou roli v ekosystému.</p>
+        </section>
+
+        <section id="chovani">
+            <h2>Chování a ohrožení</h2>
+            <p>Sloni indičtí žijí v rodinných stádech vedených zkušenou samicí, zvanou matriarcha. Stádo se skládá hlavně ze samic a mláďat, zatímco dospělí samci se často pohybují samostatně. Jsou vysoce inteligentní, mají výbornou paměť a dorozumívají se hlubokými zvuky i doteky. Bohužel patří mezi ohrožené druhy. Hlavní hrozbou je ztráta přirozeného prostředí kvůli lidské činnosti a také pytláctví kvůli klům. Ochranné programy a rezervace se snaží jejich populaci stabilizovat.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Galerie</h2>
+            <div class="gallery">
+                <img src="slon1.jpg" alt="Slon indický 1">
+                <img src="slon2.jpg" alt="Slon indický 2">
+                <img src="slon3.jpg" alt="Slon indický 3">
+                <img src="slon4.jpg" alt="Slon indický 4">
+                <img src="slon5.jpg" alt="Slon indický 5">
+                <img src="slon6.jpg" alt="Slon indický 6">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bbouba. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links (if any are added later)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
